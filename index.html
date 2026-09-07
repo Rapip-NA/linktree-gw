@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree - Politeknik IDN Bogor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Luckiest+Guy&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(150deg, #dc2626 0%, #ea580c 60%, #f97316 100%);
+            background-attachment: fixed;
+        }
+
+        .logo-text {
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border: 2.5px solid #000000;
+            border-radius: 8px;
+            padding: 14px 18px;
+            text-decoration: none;
+            color: #000000;
+            box-shadow: 2.5px 2.5px 0px 0px #000000;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 100%;
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+        }
+
+        .link-btn:hover {
+            background-color: #fff7ed;
+            transform: translate(-1.5px, -1.5px);
+            box-shadow: 4.5px 4.5px 0px 0px #000000;
+        }
+
+        .link-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0.5px 0.5px 0px 0px #000000;
+        }
+
+        .link-text {
+            font-size: 13.5px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .link-btn {
+                padding: 16px 22px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 0px 0px #000000;
+            }
+
+            .link-btn:hover {
+                box-shadow: 5px 5px 0px 0px #000000;
+            }
+
+            .link-text {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="min-h-screen m-0 bg-gradient-to-br from-red-600 via-red-500 to-orange-500 flex flex-col justify-between text-white antialiased">
+
+    <!-- Top Navigation Bar (Spans full width, Black) -->
+    <header class="w-full bg-black text-white shadow-md sticky top-0 z-30">
+        <div class="w-full max-w-2xl mx-auto h-13 py-3 flex items-center justify-center px-4 sm:px-6">
+            <div class="font-bold text-sm sm:text-base tracking-wider uppercase">
+                Home
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content: Blends seamlessly with full screen, responsive container -->
+    <main class="w-full max-w-xl md:max-w-2xl mx-auto flex-grow flex flex-col items-center px-4 sm:px-6 py-8 sm:py-10">
+
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center text-center mb-8 w-full">
+            <div
+                class="w-24 h-24 sm:w-28 sm:h-28 bg-black rounded-full flex items-center justify-center border-2 border-white/20 shadow-xl overflow-hidden relative transition-transform hover:scale-105 duration-200">
+                <div class="logo-text text-orange-500 text-3xl sm:text-4xl select-none tracking-wider">trpl</div>
+            </div>
+        </div>
+
+        <!-- Links Section: Responsive and enlarged for easy clicking -->
+        <div class="flex flex-col gap-3.5 sm:gap-4 w-full">
+
+            <a href="https://cloud.seatable.io/dtable/links/43a1eecd584d4c84b4dd" class="link-btn">
+                <span class="link-text uppercase">Link Pengumpulan Tugas TRPL</span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1df9Ant17NENejuhEtyY2diadQEACZp4l?usp=drive_link" class="link-btn">
+                <span class="link-text uppercase">Drive Surat Izin Mahasiswa</span>
+            </a>
+
+            <a href="#" class="link-btn">
+                <span class="link-text uppercase">Coming Soon....</span>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer: Spans full width of the screen, Black -->
+    <footer class="w-full bg-black text-white mt-auto py-7 sm:py-8 border-t border-white/10">
+        <div class="max-w-2xl mx-auto px-4 flex items-center justify-center text-center">
+            <p class="font-bold text-base sm:text-lg tracking-widest text-gray-200 uppercase">
+                BE CURIOUS
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
