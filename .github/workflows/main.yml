@@ -22,3 +22,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           # Ganti 'public_html/' sesuai folder root website di hosting kamu (contoh: public_html/, htdocs/, dsb.)
           server-dir: public_html/
+          protocol: ftp
+          port: 21
+          security: false # Menonaktifkan TLS data socket jika hosting memutus koneksi pasif (ECONNRESET)
+          timeout: 60000
